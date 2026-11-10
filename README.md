@@ -28,7 +28,7 @@ An AI-powered web accessibility auditing tool that scans websites for WCAG viola
 
 **AI**
 - Google Gemini (visual WCAG fixes)
-- OpenAI `gpt-image-1` (AI image editing for side-by-side view)
+- OpenAI `gpt-image-2.5-sunburst` (AI image editing for side-by-side view)
 - Anthropic Claude (friendly titles, mobile issue details)
 
 ---
@@ -136,5 +136,5 @@ Accessa/
 ## Notes
 
 - API keys are **never** exposed to the browser — all AI calls are proxied through the Express backend
-- The OpenAI image editor (`gpt-image-1`) always returns images at 1024×1024; the frontend automatically resizes them to match the original screenshot dimensions
+- The OpenAI image editor (`gpt-image-2.5-sunburst`) always returns images at 1024×1024; the frontend automatically resizes them to match the original screenshot dimensions
 - Session storage is used to cache AI-generated images and avoid redundant API calls

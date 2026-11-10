@@ -57,9 +57,9 @@ export async function openaiImageEdit({ imageBase64, prompt, apiKey }) {
   formData.append("prompt", scopedPrompt);
 
   // Explicitly lock the image model
-  formData.append("model", "gpt-image-1");
+  formData.append("model", "gpt-image-2.5-sunburst");
 
-  console.log("Calling OpenAI image edit with model gpt-image-1");
+  console.log("Calling OpenAI image edit with model gpt-image-2.5-sunburst");
 
   const response = await fetch("https://api.openai.com/v1/images/edits", {
     method: "POST",
